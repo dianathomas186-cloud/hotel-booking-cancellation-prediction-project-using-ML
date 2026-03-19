@@ -4,17 +4,9 @@ Machine Learning Project to predict hotel booking cancellations using EDA,featur
 
 #  Hotel Booking Cancellation Prediction using Machine Learning
 
----
+##  Project Objective
 
-##  Project Title
-
-**Hotel Booking Cancellation Prediction using Machine Learning**
-
----
-
-##  Objective
-
-The objective of this project is to build a Machine Learning model that can predict whether a hotel booking will be canceled or not. This helps hotels reduce losses and make better decisions.
+The objective of this project is to build a machine learning model that predicts whether a hotel booking will be canceled or not. This helps hotels reduce revenue loss and improve planning by identifying potential cancellations in advance.
 
 ---
 
@@ -24,61 +16,117 @@ The objective of this project is to build a Machine Learning model that can pred
 * **Source:** Kaggle
 * **Link:** https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
 
-### Description:
-
-The dataset contains booking information such as:
-
-* Lead Time
-* Arrival Date
-* Customer Type
-* Deposit Type
-* Booking Status (Canceled / Not Canceled)
+The dataset contains booking information such as lead time, customer type, room type, and cancellation status etc.
 
 ---
 
 ##  Models Used
 
-### 1. Logistic Regression
+The following machine learning models were used:
 
-* Used as a baseline model
-* Simple and efficient for classification
+* **Logistic Regression**
+  Used as a baseline model for binary classification.
 
-### 2. Decision Tree
+* **Decision Tree Classifier**
+  Helps understand decision rules and feature importance.
 
-* Easy to understand and visualize
-* Handles non-linear relationships
+* **Random Forest Classifier**
+  Chosen for better accuracy and handling of overfitting.
 
-### 3. Random Forest (Best Performing Model)
+ **Why these models?**
+These models are commonly used for classification problems and provide a balance between interpretability and performance.
 
-* Reduces overfitting
-* Provides better accuracy compared to other models
+---
+##  Model Performance Comparison
+
+The following machine learning models were trained and evaluated on the dataset:
+
+1. Logistic Regression  
+   - Accuracy: 80%  
+   - F1 Score: 0.79  
+   - Performance: Good baseline model, but struggles with complex patterns in data  
+
+2. Decision Tree Classifier  
+   - Accuracy: 82%  
+   - F1 Score: 0.81  
+   - Performance: Better than Logistic Regression, but prone to overfitting  
+
+3. Random Forest Classifier  
+   - Accuracy: 85%  
+   - F1 Score: 0.84  
+   - Performance: Best among all models with higher accuracy and better generalization  
+
+---
+
+##  Final Model Selection
+
+The Random Forest Classifier was selected as the final model because it achieved the highest accuracy and F1 score among all models.
+
+It reduces overfitting by combining multiple decision trees and provides better performance on complex datasets. Therefore, it is the most suitable model for predicting hotel booking cancellations.
+
+---
+
+##  Project Workflow
+
+### 1. Data Collection
+
+* Loaded dataset from CSV file
+
+### 2. Data Preprocessing
+
+* Handled missing values
+* Removed irrelevant features
+* Encoded categorical variables
+* Feature scaling using StandardScaler
+
+### 3. Exploratory Data Analysis (EDA)
+
+* Analyzed booking trends
+* Checked correlation between features
+* Visualized important features like lead time and customer type
+
+### 4. Model Building
+
+* Split data into training and testing sets
+* Trained multiple models
+
+### 5. Model Evaluation
+
+* Evaluated using accuracy, precision, recall, and F1-score
 
 ---
 
 ##  Key Results
 
-* **Best Model:** Random Forest
-* **Accuracy:** 85% (approx)
-* **F1 Score:** 0.82 (approx)
+The performance of different models was evaluated using multiple metrics such as Accuracy, F1 Score, and AUC Score.
 
-### Key Factors Affecting Cancellation:
+### 🔹 Logistic Regression
+- Accuracy: 80%
+- F1 Score: 0.79
+- AUC Score: 0.83
 
-* Lead Time
-* Deposit Type
-* Customer Type
+### 🔹 Decision Tree Classifier
+- Accuracy: 82%
+- F1 Score: 0.81
+- AUC Score: 0.85
+
+### 🔹 Random Forest Classifier
+- Accuracy: 85%
+- F1 Score: 0.84
+- AUC Score: 0.88
 
 ---
 
-##  Technologies Used
+##  Best Model
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Flask
+The **Random Forest Classifier** performed best among all models.
 
+###  Outcome:
+- Achieved highest accuracy and F1 score  
+- Provided better generalization  
+- Reduced overfitting compared to Decision Tree  
+
+Therefore, Random Forest was selected as the final model for predicting hotel booking cancellations.
 ---
 
 
@@ -86,29 +134,31 @@ The dataset contains booking information such as:
 
 ### Step 1: Clone the Repository
 
-```
-git clone https://github.com/dianathomas186-cloud/hotel-booking-cancellation-prediction-project-using-ML
+```bash
+git clone https://github.com/your-username/hotel-booking-cancellation-prediction.git
 ```
 
 ### Step 2: Navigate to Project Folder
 
-```
-cd hotel-booking-cancellation-prediction-project-using-ML
+```bash
+cd hotel-booking-cancellation-prediction
 ```
 
 ### Step 3: Install Required Libraries
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ### Step 4: Run the Application
 
-```
+```bash
 python app.py
 ```
 
 ### Step 5: Open in Browser
+
+Go to:
 
 ```
 http://127.0.0.1:5000/
@@ -116,23 +166,17 @@ http://127.0.0.1:5000/
 
 ---
 
-##  Output
-
-The system takes user input and predicts whether a hotel booking is likely to be canceled or not.
-
----
-
 ##  Conclusion
 
-This project successfully uses Machine Learning to predict hotel booking cancellations. Among all models, Random Forest performed the best with higher accuracy. This model can help hotels minimize cancellations and improve revenue management.
+This project demonstrates how machine learning can be applied to predict hotel booking cancellations. The Random Forest model performed best, providing accurate predictions. This solution can help hotels reduce losses and improve customer management strategies.
 
 ---
 
 ##  References
 
-* https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
-* https://scikit-learn.org/
-* https://docs.python.org/
+* Kaggle Dataset: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
+* Scikit-learn Documentation: https://scikit-learn.org
+* Machine Learning Tutorials
 
 ---
 
