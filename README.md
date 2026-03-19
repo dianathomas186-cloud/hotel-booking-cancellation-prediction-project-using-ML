@@ -53,7 +53,7 @@ Hotel booking cancellations cause significant revenue loss and operational chall
 - **ROC-AUC Score:** ~0.88  
 - Random Forest outperformed other models.  
 - Insight: Longer lead times, city hotels, and certain customer types have higher cancellation rates.  
-       
+
 
 ## How to Run
 
@@ -68,14 +68,30 @@ python app.py
 http://127.0.0.1:5000
 Use the web interface to make predictions.
 
-##Conclusion
 
-- The project successfully predicts hotel booking cancellations using machine learning.  
-- Random Forest is the best-performing model.  
-- Hotels can use this model to anticipate cancellations and improve booking strategies.  
+## Conclusion
+
+The machine learning model successfully predicts hotel booking cancellations based on historical data. Among the models used, **Random Forest** performed the best after hyperparameter tuning.
+
+This project helps hotels:
+- Predict potential cancellations
+- Improve resource planning
+- Reduce revenue loss
+Overall, the model can support better decision-making in hotel management.
+
 
 ## References
 1. Kaggle - Hotel Booking Demand Dataset  
+   https://www.kaggle.com/jessemostipak/hotel-booking-demand  
+
 2. Scikit-learn Documentation  
+   https://scikit-learn.org  
+
 3. Pandas Documentation  
-4. Seaborn Visualization Library  
+   https://pandas.pydata.org  
+
+4. Seaborn Documentation  
+   https://seaborn.pydata.org  
+
+
+
