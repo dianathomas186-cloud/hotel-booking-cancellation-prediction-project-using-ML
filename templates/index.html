@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Cancellation Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Booking Cancellation Prediction</h1>
+
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="hotel">Hotel Type:</label>
+                <select id="hotel" name="hotel" required onchange="clearResult()">
+                    <option value="">Select Hotel Type</option>
+                    <option value="0">City Hotel</option>
+                    <option value="1">Resort Hotel</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lead_time">Lead Time (days):</label>
+                <input type="number" id="lead_time" name="lead_time" min="0" required oninput="clearResult()">
+            </div>
+
+            <div class="form-group">
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="0" required oninput="clearResult()">
+            </div>
+
+            <div class="form-group">
+                <label for="children">Number of Children:</label>
+                <input type="number" id="children" name="children" min="0" required oninput="clearResult()">
+            </div>
+
+            <div class="form-group">
+                <label for="previous_cancellations">Previous Cancellations:</label>
+                <input type="number" id="previous_cancellations" name="previous_cancellations" min="0" required oninput="clearResult()">
+            </div>
+
+            <button type="submit">Predict Cancellation</button>
+        </form>
+
+        {% if result %}
+            <div class="result" id="resultBox">
+                <h2>{{ result }}</h2>
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        function clearResult() {
+            let resultDiv = document.getElementById("resultBox");
+            if (resultDiv) {
+                resultDiv.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
