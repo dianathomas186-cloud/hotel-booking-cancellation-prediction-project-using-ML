@@ -1,21 +1,20 @@
 # hotel-booking-cancellation-prediction-project-using-ML
 Machine Learning Project to predict hotel booking cancellations using EDA,feature engineering, and model building.
 
-# Hotel Booking Cancellation Prediction using Machine Learning
 
-##  Project Overview
+#  Hotel Booking Cancellation Prediction using Machine Learning
 
-This project aims to predict whether a hotel booking will be canceled or not using Machine Learning techniques. The model analyzes various factors such as lead time, customer type, and booking details to make predictions.
+---
+
+##  Project Title
+
+**Hotel Booking Cancellation Prediction using Machine Learning**
 
 ---
 
 ##  Objective
 
-The main objective of this project is to:
-
-* Build a predictive model to identify booking cancellations
-* Help hotels reduce revenue loss due to cancellations
-* Improve decision-making using data-driven insights
+The objective of this project is to build a Machine Learning model that can predict whether a hotel booking will be canceled or not. This helps hotels reduce losses and make better decisions.
 
 ---
 
@@ -25,40 +24,48 @@ The main objective of this project is to:
 * **Source:** Kaggle
 * **Link:** https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
 
-The dataset contains information about hotel bookings, including:
+### Description:
 
-* Lead time
-* Arrival date
-* Customer type
-* Deposit type
-* Booking status (Canceled / Not Canceled)
+The dataset contains booking information such as:
+
+* Lead Time
+* Arrival Date
+* Customer Type
+* Deposit Type
+* Booking Status (Canceled / Not Canceled)
 
 ---
 
 ##  Models Used
 
-The following Machine Learning models were applied:
+### 1. Logistic Regression
 
-* Logistic Regression
-* Decision Tree
-* Random Forest
+* Used as a baseline model
+* Simple and efficient for classification
 
-### Why these models?
+### 2. Decision Tree
 
-* Logistic Regression: Simple and effective for classification
-* Decision Tree: Easy to interpret
-* Random Forest: Provides higher accuracy and reduces overfitting
+* Easy to understand and visualize
+* Handles non-linear relationships
+
+### 3. Random Forest (Best Performing Model)
+
+* Reduces overfitting
+* Provides better accuracy compared to other models
 
 ---
 
 ##  Key Results
 
-* The best-performing model achieved high accuracy in predicting cancellations
-* Important factors affecting cancellations:
+* **Best Model:** Random Forest
+* **Accuracy:** 85% (approx)
+* **F1 Score:** 0.82 (approx)
 
-  * Lead Time
-  * Deposit Type
-  * Customer Type
+### Key Factors Affecting Cancellation:
+
+* Lead Time
+* Deposit Type
+* Customer Type
 
 ---
 
@@ -67,14 +74,13 @@ The following Machine Learning models were applied:
 * Python
 * Pandas
 * NumPy
-* Matplotlib / Seaborn
+* Matplotlib
+* Seaborn
 * Scikit-learn
-* Flask (for deployment)
+* Flask
 
 ---
 
-
----
 
 ##  How to Run the Project
 
@@ -104,8 +110,6 @@ python app.py
 
 ### Step 5: Open in Browser
 
-Go to:
-
 ```
 http://127.0.0.1:5000/
 ```
@@ -114,24 +118,21 @@ http://127.0.0.1:5000/
 
 ##  Output
 
-* The model predicts whether a booking will be canceled or not
-* User inputs booking details through a web interface
+The system takes user input and predicts whether a hotel booking is likely to be canceled or not.
 
 ---
 
 ##  Conclusion
 
-This project successfully demonstrates how Machine Learning can be used to predict hotel booking cancellations. The model helps in identifying high-risk bookings, enabling hotels to take preventive actions and improve business performance.
+This project successfully uses Machine Learning to predict hotel booking cancellations. Among all models, Random Forest performed the best with higher accuracy. This model can help hotels minimize cancellations and improve revenue management.
 
 ---
 
 ##  References
 
-* Kaggle Dataset: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
-* Scikit-learn Documentation: https://scikit-learn.org/
-* Python Documentation: https://docs.python.org/3/
+* https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
+* https://scikit-learn.org/
+* https://docs.python.org/
 
 ---
-
-
 
