@@ -1,6 +1,5 @@
-# hotel-booking-cancellation-prediction-project-using-ML
+# Hotel-booking-cancellation-prediction-project-using-ML
 Machine Learning Project to predict hotel booking cancellations using EDA,feature engineering, and model building.
-# Hotel Booking Cancellation Prediction Using Machine Learning
 
 ## Project Overview
 Hotel booking cancellations cause significant revenue loss and operational challenges for hotels. This project uses machine learning to predict whether a hotel booking will be canceled based on historical booking and customer data. Predicting cancellations helps hotels optimize resources, reduce revenue loss, and improve customer service.
@@ -68,7 +67,7 @@ python app.py
 http://127.0.0.1:5000
 Use the web interface to make predictions.
 
-
+```
 ## Conclusion
 
 The machine learning model successfully predicts hotel booking cancellations based on historical data. Among the models used, **Random Forest** performed the best after hyperparameter tuning.
